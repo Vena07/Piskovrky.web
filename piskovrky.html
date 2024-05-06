@@ -1,0 +1,51 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piškovrky</title>
+    <script src="hra.js"></script>
+    <link rel="stylesheet" href="hra.css">
+</head>
+<body>
+    <div class="hra">
+        <h1>Piškovrky</h1>
+        <div class="start">
+            <button onclick="reset()">Nová hra</button>
+        </div>
+        <div class=" ">
+
+        </div>
+        <div class="deska">
+            <div class="deskahry">
+                <div class="rada">
+                    <div class="pole" id="pole1" onclick="zmena('pole1')"></div>
+                    <div class="pole" id="pole2" onclick="zmena('pole2')"></div>
+                    <div class="pole" id="pole3" onclick="zmena('pole3')"></div>
+                </div>
+                <div class="rada">
+                    <div class="pole" id="pole4" onclick="zmena('pole4')"></div>
+                    <div class="pole" id="pole5" onclick="zmena('pole5')"></div>
+                    <div class="pole" id="pole6" onclick="zmena('pole6')"></div>
+                </div>
+                <div class="rada">
+                    <div class="pole" id="pole7" onclick="zmena('pole7')"></div>
+                    <div class="pole" id="pole8" onclick="zmena('pole8')"></div>
+                    <div class="pole" id="pole9" onclick="zmena('pole9')"></div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="bod">
+            <div class="body">
+                <p>O = </p>
+                <p id="pocetO">0</p>
+            </div>
+            <div class="body">
+                <p>X = </p>
+                <p id="pocetX">0</p>
+            </div>
+        </div>
+
+    </div>
+</body>
+</html>
