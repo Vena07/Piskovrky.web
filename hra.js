@@ -6,8 +6,8 @@ function zmena(polex) {
     let pole = document.getElementById(polex);
         if (vyhra !== 1){
             if ((pole.innerHTML !== 'O') && (pole.innerHTML !== 'X')){
-            if (b === 1){pole.innerHTML = 'O'; b = b+1}
-            else if (b === 2){pole.innerHTML = 'X'; b = b-1}       
+            if (b === 1){pole.innerHTML = 'O'; b = b+1;}
+            else if (b === 2){pole.innerHTML = 'X'; b = b-1;}       
             kontorla();
         }
     }
