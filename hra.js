@@ -62,3 +62,8 @@ else if ((pole1 === pole2 && pole2 === pole3 && pole3 === "X") ||
 function reset(){
     smazat();
 }
+
+function napoveda(){
+    alert("Hra piškovkry: ve hře se snažíte spojit tři stejné tvary, kroužek nebo křížek, hráč který tyto tvary spojí dostává bod a další kolo začíná ten který prohrál, pro nové kolo stikněte tlačítko 'Nová hra'.")
+}
+ 

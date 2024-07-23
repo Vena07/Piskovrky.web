@@ -59,13 +59,14 @@ h1{
 
 }
 .body{
+    font-size: 20px;
     display: flex;
     background-color: #ffede1;
     border: solid black;
     border-radius: 20px;
     margin: 20px;
     justify-content: center;
-    width: 500;
+    width: 100px;
 
 }
 
@@ -99,3 +100,8 @@ p{
     margin-left: 5px;
 }
 
+.napoveda{
+    font-size: 40px;
+    font-family: cursive;
+    width: 100px;
+}
