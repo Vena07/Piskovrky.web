@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Piškovrky</title>
+    
+    
+    
+    <link rel="stylesheet" href="pis-css.css">
+</head>
+<body>
+
+<section id="piškovrky">
+    <section id="menu">
+        <div class="nadpis">
+            <p>TIC-TAC-TOE</p>
+        </div>
+        <div class="select">
+            <div class="napis">
+                <p>Select mode</p>
+            </div>
+            <div class="moznosti">
+                <div class="moznost">
+                    <button class="moznost1" onclick="PVP()" id="pvpmode">PVP</button>
+                </div>
+                <div class="moznost">
+                    <button class="moznost1" onclick="PVE()" id="pvemode">PVE</button>
+                </div>
+            </div>
+        </div>
+        <div class="playt">
+            <button class="play" onclick="playgame()">Play</button>
+        </div>
+    </section>
+    <section id="hra">   
+        <div class="bod">
+            <div class="pocetkol">
+                <p>Round: </p>
+                <p class="cislokol" id="cislokol">1</p>
+            </div>
+            <div class="body" id="bodyO">
+                <p id="bod1">O = </p>
+                <p id="pocetO">0</p>
+            </div>
+            <div class="body" id="bodyX">  
+                <p id="bod2">X = </p>
+                <p id="pocetX">0</p>
+            </div>
+            <div class="tlacitka">
+                <button class="zpet" onclick="zpet()">Back</button>
+                <button id="playbutton" class="dalsikolo" onclick="dalsikolo()">Next Round</button>
+                    
+                
+            </div>
+        </div>
+        <div class="deska">
+            <div class="deskahry">
+                <div class="rada">
+                    <div class="pole" id="pole1" onclick="zmena('pole1')"></div>
+                    <div class="pole" id="pole2" onclick="zmena('pole2')"></div>
+                    <div class="pole" id="pole3" onclick="zmena('pole3')"></div>
+                </div>
+                <div class="rada">
+                    <div class="pole" id="pole4" onclick="zmena('pole4')"></div>
+                    <div class="pole" id="pole5" onclick="zmena('pole5')"></div>
+                    <div class="pole" id="pole6" onclick="zmena('pole6')"></div>
+                </div>
+                <div class="rada">
+                    <div class="pole" id="pole7" onclick="zmena('pole7')"></div>
+                    <div class="pole" id="pole8" onclick="zmena('pole8')"></div>
+                    <div class="pole" id="pole9" onclick="zmena('pole9')"></div>
+                </div>
+            </div>
+        </div>
+        
+        
+    </section>    
+</section>
+
+<audio id="kruh" src="kroužek.mp4"></audio>
+<audio id="tlacitko" src="tlacitko.mp3"></audio>
+<audio id="krizek" src="křižek.mp4"></audio>
+<script src="pis-js.js"></script>
+</body>
+</html>
