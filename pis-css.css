@@ -11,6 +11,7 @@ body {
     border: solid black 5px;
     background-color: #c0c0c0;
     border-radius: 20px;
+    margin: 10px;
 }
 
 .moznosti {
@@ -19,14 +20,14 @@ body {
 }
 
 .moznost {
-    margin: 10px;
+    margin: 5px; /* Úprava okrajů */
 }
 
 .moznost1 { 
-    width: 200px;
-    height: 200px;
+    width: 120px; /* Další zmenšení */
+    height: 120px; /* Další zmenšení */
     border-radius: 20px;
-    font-size: 75px;
+    font-size: 35px; /* Další zmenšení */
     border: solid black 5px;
     transition: all 0.2s ease;
 }
@@ -34,19 +35,19 @@ body {
 .napis {
     display: flex;
     justify-content: center;
-    font-size: 60px;
-    margin: -50px;
+    font-size: 30px; /* Další zmenšení */
+    margin: -20px; /* Úpravy okrajů */
 }
 
 .nadpis {
-    margin-top: 1px;
-    margin-bottom: 2px;
+    margin-top: 10px;
+    margin-bottom: 20px;
     display: flex;
     justify-content: center;
     text-align: center;
-    font-size: 90px;
+    font-size: 50px; /* Další zmenšení */
     align-items: baseline;
-    margin: -60px;
+    margin: -30px; /* Úpravy okrajů */
 }
 
 .playt {
@@ -56,14 +57,14 @@ body {
 
 .play {
     font-family: cursive;
-    font-size: 50px;
+    font-size: 30px; /* Další zmenšení */
     display: flex;
     background-color: #ffffff;
-    border: solid  5px;
+    border: solid 5px;
     border-radius: 20px;
-    margin: 20px;
+    margin: 5px; /* Úpravy okrajů */
     justify-content: center;
-    width: 160px;
+    width: 100px; /* Další zmenšení */
     transition: all 0.2s ease;
 }
 
@@ -108,29 +109,29 @@ body {
     min-height: 100vh;
 }
 
-.tlacitka{
+.tlacitka {
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
-    margin-top:150px ;
+    margin-top: 60px; /* Další zmenšení */
 }
 
-
-.zpet{
-    width: 125px;
+.zpet {
+    width: 80px; /* Další zmenšení */
+    font-size: 15px; /* Další zmenšení */
 }
 
-.zpet:hover{
+.zpet:hover {
     transform: scale(1.1);
 }
 
-.dalsikolo:hover{
+.dalsikolo:hover {
     transform: scale(1.1);
 }
 
-.dalsikolo , .zpet{
+.dalsikolo, .zpet {
     font-family: cursive;
-    font-size: 35px;
+    font-size: 15px; /* Další zmenšení */
     margin: 5px;
     display: flex;
     background-color: #ffffff;
@@ -139,18 +140,19 @@ body {
     justify-content: center;
     transition: all 0.2s ease;
 }
+
 .deska {
     border-radius: 15px;
     display: flex;
     justify-content: center;
     background-color: #d7f9ff;
     align-items: baseline;
-    width: 600px;
-    height: 600px;
-    margin-top: 50px;
+    width: 375px; /* Další zmenšení */
+    height: 375px; /* Další zmenšení */
+    margin-top: 20px; /* Úpravy okrajů */
 }
 
-.deskahry {
+.deska .deskahry {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -160,22 +162,21 @@ body {
     display: flex;
 }
 
-.pocetkol{
+.pocetkol {
     display: flex;
     justify-content: start;
-    font-size: 35px;
+    font-size: 15px; /* Další zmenšení */
 }
 
 .pole {
     display: flex;
-    background-color:#ebebeb ;
-    width: 200px;
-    height: 200px;
+    background-color: #ebebeb;
+    width: 125px; /* Další zmenšení */
+    height: 125px; /* Další zmenšení */
     justify-content: center;
     align-items: center;
-    font-size: 100px;
-    font: 35px;
-    text-shadow: 2px 2px 0 black, -2px -2px 0 black,2px -2px 0 black,-2px 2px 0 black,2px 0 0 black,-2px 0 0 black,0 2px 0 black,0 -2px 0 black;
+    font-size: 40px; /* Další zmenšení */
+    text-shadow: 1px 1px 0 black; /* Zmenšení stínu textu */
 }
 
 .bod {
@@ -185,32 +186,32 @@ body {
     align-items: center;
     border: solid black 5px;
     border-radius: 15px;
-    width: 450px;
-    height:700px ;
+    width: 200px; /* Další zmenšení */
+    height: 400px; /* Další zmenšení */
     background-color: #c0c0c0;
 }
 
 .body {
-    font-size: 25px;
+    font-size: 15px; /* Další zmenšení */
     display: flex;
     background-color: #ffede1;
     border: solid black 5px;
     border-radius: 20px;
-    margin-top:50px;
+    margin-top: 10px; /* Úpravy okrajů */
     justify-content: center;
-    width: 250px;
+    width: 150px; /* Další zmenšení */
 }
 
-#bodyO{
+#bodyO {
     background-color: #004e98;
     color: white;
 }
 
-#bod1, #pocetO{
+#bod1, #pocetO {
     color: white;
 }
 
-#bod2, #pocetX{
+#bod2, #pocetX {
     color: black;
 }
 
@@ -230,15 +231,15 @@ body {
 }
 
 .napoveda {
-    font-size: 40px;
+    font-size: 20px; /* Další zmenšení */
     font-family: cursive;
-    width: 100px;
+    width: 60px; /* Další zmenšení */
 }
 
 .pole, h1, p, button, .kolain {
     font-family: "Comic Sans MS", cursive, sans-serif;
-    letter-spacing: 2px;
-    word-spacing: 2px;
+    letter-spacing: 1px;
+    word-spacing: 1px;
     font-weight: 700;
     text-decoration: none solid rgb(68, 68, 68);
     font-style: normal;
@@ -303,74 +304,328 @@ body {
     border-left: solid black 3px;
     color: white; 
 }
+
 #playbutton:disabled{
-    background-color: #c0c0c0;
-    color: #c0c0c0;
-    border: #c0c0c0;
+    opacity: 0.5;
 }
 
-@media (max-width: 600px) {
-    h1 {
+@media (min-width: 1128px) and (min-height: 615px) {
+    body {
+        background-color: #ebebeb;
+    }
+    
+    /* menu */
+    #menu {
+        display: block;
+    }
+    
+    .select {
+        border: solid black 5px;
+        background-color: #c0c0c0;
+        border-radius: 20px;
+    }
+    
+    .moznosti {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .moznost {
+        margin: 10px;
+    }
+    
+    .moznost1 { 
+        width: 200px;
+        height: 200px;
+        border-radius: 20px;
+        font-size: 75px;
+        border: solid black 5px;
+        transition: all 0.2s ease;
+    }
+    
+    .napis {
+        display: flex;
+        justify-content: center;
+        font-size: 60px;
+        margin: -50px;
+    }
+    
+    .nadpis {
         margin-top: 1px;
         margin-bottom: 2px;
         display: flex;
         justify-content: center;
         text-align: center;
-        font-size: 50px;
+        font-size: 90px;
+        align-items: baseline;
+        margin: -60px;
     }
     
+    .playt {
+        display: flex;
+        justify-content: center;
+    }
+    
+    .play {
+        font-family: cursive;
+        font-size: 50px;
+        display: flex;
+        background-color: #ffffff;
+        border: solid  5px;
+        border-radius: 20px;
+        margin: 20px;
+        justify-content: center;
+        width: 160px;
+        transition: all 0.2s ease;
+    }
+    
+    .pridat:hover {
+        background-color: #3a6ea5;
+    }
+    
+    .odebrat:hover {
+        background-color: #3a6ea5;
+    }
+    
+    .kontaktt {
+        display: flex;
+        justify-content: end;
+    }
+    
+    .play:hover {
+        transform: scale(1.1);
+    }
+    
+    .kontakt:hover {
+        transform: scale(1.1);
+    }
+    
+    .moznost1:hover {
+        transform: scale(1.1);
+    }
+    
+    #pvpmode {
+        background-color: #3a6ea5;
+    }
+    
+    #pvemode {
+        background-color: #ebebeb;
+    }
+    
+    /* hra */
+    #hra {
+        display: none;
+        justify-content: space-around;
+        min-width: 100vw;
+        min-height: 100vh;
+    }
+    
+    .tlacitka{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        margin-top:150px ;
+    }
+    
+    
+    .zpet{
+        width: 125px;
+    }
+    
+    .zpet:hover{
+        transform: scale(1.1);
+    }
+    
+    .dalsikolo:hover{
+        transform: scale(1.1);
+    }
+    
+    .dalsikolo , .zpet{
+        font-family: cursive;
+        font-size: 35px;
+        margin: 5px;
+        display: flex;
+        background-color: #ffffff;
+        border: solid black 5px;
+        border-radius: 20px;
+        justify-content: center;
+        transition: all 0.2s ease;
+    }
     .deska {
         border-radius: 15px;
-        border: solid black;
         display: flex;
         justify-content: center;
         background-color: #d7f9ff;
-        align-items: center;
-        width: 300px;
-        height: 300px;
+        align-items: baseline;
+        width: 600px;
+        height: 600px;
+        margin-top: 50px;
+    }
+    
+    .deskahry {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    
+    .rada {
+        display: flex;
+    }
+    
+    .pocetkol{
+        display: flex;
+        justify-content: start;
+        font-size: 35px;
     }
     
     .pole {
-        background-color: #f9fbf2;
         display: flex;
-        width: 80px;
-        height: 80px;
-        border: 3px solid black;
+        background-color:#ebebeb ;
+        width: 200px;
+        height: 200px;
         justify-content: center;
         align-items: center;
-        margin: 5px;
-        border-radius: 5px;
         font-size: 100px;
-    }
-
-    .body {
-        font-size: 20px;
-        display: flex;
-        background-color: #ffede1;
-        border: solid black;
-        border-radius: 20px;
-        margin: 20px;
-        justify-content: center;
-        width: 80px;
+        font: 35px;
+        text-shadow: 2px 2px 0 black, -2px -2px 0 black,2px -2px 0 black,-2px 2px 0 black,2px 0 0 black,-2px 0 0 black,0 2px 0 black,0 -2px 0 black;
     }
     
-    button {
-        font-size: 20px;
+    .bod {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border: solid black 5px;
+        border-radius: 15px;
+        width: 450px;
+        height:700px ;
+        background-color: #c0c0c0;
+    }
+    
+    .body {
+        font-size: 25px;
         display: flex;
         background-color: #ffede1;
-        border: solid black;
+        border: solid black 5px;
         border-radius: 20px;
-        margin: 20px;
+        margin-top:50px;
         justify-content: center;
-        width: 300px;
+        width: 250px;
+    }
+    
+    #bodyO{
+        background-color: #004e98;
+        color: white;
+    }
+    
+    #bod1, #pocetO{
+        color: white;
+    }
+    
+    #bod2, #pocetX{
+        color: black;
+    }
+    
+    .start {
+        display: flex;
+        justify-content: center;
     }
     
     .pocet {
         font-family: cursive;
         margin: 5px;
     }
+    
     #pocetO, #pocetX {
         padding-left: 2px;
         margin-left: 5px;
     }
+    
+    .napoveda {
+        font-size: 40px;
+        font-family: cursive;
+        width: 100px;
+    }
+    
+    .pole, h1, p, button, .kolain {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        letter-spacing: 2px;
+        word-spacing: 2px;
+        font-weight: 700;
+        text-decoration: none solid rgb(68, 68, 68);
+        font-style: normal;
+        font-variant: small-caps;
+        text-transform: none;
+        color: rgb(0, 0, 0);
+    }
+    
+    #pole1 {  
+        border-bottom: solid black 3px; 
+        border-right: solid black 3px;
+        color: white;    
+    }
+    
+    #pole2 {
+        border-right: solid black 3px; 
+        border-bottom: solid black 3px;
+        border-left: solid black 3px;
+        color: white; 
+    }
+    
+    #pole3 {
+        border-bottom: solid black 3px;
+        border-left: solid black 3px;
+        color: white; 
+    }
+    
+    #pole4 {
+        border-bottom: solid black 3px;
+        border-right: solid black 3px; 
+        border-top: solid black 3px;
+        color: white; 
+    }
+    
+    #pole5 {
+        border: solid black 3px;
+        color: white; 
+    }
+    
+    #pole6 {
+        border-top: solid black 3px; 
+        border-bottom: solid black 3px;
+        border-left: solid black 3px;
+        color: white; 
+    }
+    
+    #pole7 {
+        border-right: solid black 3px;
+        border-top: solid black 3px;
+        color: white; 
+    }
+    
+    #pole8 {
+        border-top: solid black 3px; 
+        border-right: solid black 3px;
+        border-left: solid black 3px;
+        color: white; 
+    }
+    
+    #pole9 {
+        border-top: solid black 3px; 
+        border-left: solid black 3px;
+        color: white; 
+    }
+    #playbutton:disabled{
+        opacity: 0.5;
+    }
+
+    
+
+    
 }
+
+
+
+
+
+

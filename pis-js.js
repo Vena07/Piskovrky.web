@@ -72,6 +72,15 @@ function playgame(){
 }
 
 function zpet(){
+    pocetkliku = 0;
+    b = 1
+    const bodyO = document.getElementById('bodyO');
+    const bodyX = document.getElementById('bodyX');
+    const bod1 = document.getElementById('bod1');
+    const bod2 = document.getElementById('bod2');
+    const poceO = document.getElementById('pocetO');
+    const poceX = document.getElementById('pocetX');
+    
     const playbutton = document.getElementById('playbutton')
     playbutton.disabled = true;
     const menu = document.getElementById('menu');
@@ -93,12 +102,27 @@ function zpet(){
     pocet = document.getElementById("pocetO");
     pocet.innerHTML = vyhrao;
     zvuktlacitko.play()
+    if (hrapve === true) {
+        bodyX.style.backgroundColor = '#ff6600';
+    bodyO.style.backgroundColor = '#ebebeb';
+    bod1.style.color = 'black';
+    poceO.style.color = 'black';
+    bod2.style.color = 'white';
+    poceX.style.color = 'white';
+    }
+    if (hrapvp === true) {
+        bodyO.style.backgroundColor = '#004e98';
+    bodyX.style.backgroundColor = '#ebebeb';
+    bod2.style.color = 'black';
+    poceX.style.color = 'black';
+    bod1.style.color = 'white';
+    poceO.style.color = 'white';
+    }
+
 }
 
 function dalsikolo(){
     const playbutton = document.getElementById('playbutton')
-
-    if (vyhra === true || pocetkliku === 9){
         playbutton.disabled = true;
 
     pocetkliku = 0;
@@ -118,7 +142,7 @@ function dalsikolo(){
     } 
     }
     zvuktlacitko.play()    
-}
+
 }
 
 function zmena(polex) {  
@@ -178,7 +202,7 @@ function zmena(polex) {
     else if (hrapve === true){
             if (vyhra !== true){
                 if ((pole.innerHTML !== 'O') && (pole.innerHTML !== 'X')){
-                if (b === 1){pole.innerHTML = 'X'; b = b+1;kontrolaX(),pocetkliku +=1; 
+                if (b === 1){pole.innerHTML = 'X'; b = b+1;pocetkliku +=1; 
                     zvukkrizek.play();
                     pole.style.color = '#ff6600';
                     bodyO.style.backgroundColor = '#004e98';
@@ -187,9 +211,10 @@ function zmena(polex) {
                     poceX.style.color = 'black';
                     bod1.style.color = 'white';
                     poceO.style.color = 'white';
+                    kontrolaX();
                 }
                 setTimeout(() => {
-                if (pocetkliku===9){vyhra = true}
+                if (pocetkliku===9){vyhra = true; tlacitkokon()}
                 if(vyhra === false){ 
                     b = b-1;
                     pocetkliku +=1;
@@ -302,10 +327,14 @@ function kontrolaO(){
         if (vyhra === true || pocetkliku === 9){
             playbutton.disabled = false;}
             zvyrazneni();
+        
 }
 }
 
-
+function tlacitkokon(){
+    if (vyhra === true || pocetkliku === 9){
+    playbutton.disabled = false;}
+}
 
 function kontrolaX(){
     const playbutton = document.getElementById('playbutton')
@@ -334,7 +363,7 @@ function kontrolaX(){
             pocet.innerHTML = vyhrax;
             if (vyhra === true || pocetkliku === 9){
                 playbutton.disabled = false;}
-                zvyrazneni();
+            zvyrazneni();
         }  
 }
 
